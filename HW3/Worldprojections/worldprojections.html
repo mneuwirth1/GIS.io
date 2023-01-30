@@ -12,17 +12,17 @@
     <p>After installing the Indicatrix mapper plug-in to QGIS, I imported the naturalearth shapefile. To change the map projection, I changed the render EPSG in the bottom right hand corner of the program. Searching the QGIS database for each EPSG number, I then re-rendered the image using the different projections.  </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The WGS84 projection preserves the distance, size, and shape of the middle horizontal portion of the map, while distorting the distance, size, and shape of the northernmost and southernmost points. The northern and southern arctic regions appear enlarged and stretched horizontally.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The Aitoff projection represents the Earth as more of an ellipsoid. It preserves the distance, size, and shape in the very center of the map. It distorts the distance, size, and shape at increasing intervals as distance increases from the center. The North and South poles are much closer to their actual size than WGS84 but still are distorted to a degree.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>WGS84/Pseudo-Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Similar to standard WGS84, the distance, size, and shape of the entire middle portion of the map are preserved. The northern and southernmost horizontal parallels are distorted by size and distance, but shape is preserved. There is no stretching of Antarctica or Greenland, rather they appear slightly larger than they are in actuality but with the same shape.</h3>
     <a href="https://raw.githubusercontent.com/mneuwirth1/GIS.io/main/HW3/Worldprojections/maps/3857.png">
     <img src="https://raw.githubusercontent.com/mneuwirth1/GIS.io/main/HW3/Worldprojections/maps/3857.png" alt="Pseudo-Mercator" width='500px'>
     </a>
