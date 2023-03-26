@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+</head>
+<body>
+<h1>Homework 8: Geoprocessing </h1>
+<h3>Max Neuwirth</h3>
+<h2>Research question:</h2>
+<h3>What is the percentage of Washington D.C. affordable housing outside walking distance (.25 miles) of a metro station?</h3>
+    <!-- Your map goes here -->
+<a href="./HW8.png">
+    <img src="./HW8.png" alt="Affordable Housing & Metro Stations" width='500px'>
+    </a>
+<h2>Method:</h2>
+<h3>1. Created the .25 mile buffer of “walking distance” around each metro stop</h3>
+<h3>2. Used the difference tool to get the homes outside the “walking distance” buffers</h3>
+<h3>3. Manually counted the number of homes remaining inside the “walking distance” buffers</h3>
+<h3>4. Subtracted from number of affordable housing units in the original layer attribute table to get number of homes outside the “walking distance” buffers</h3>
+<h3>5. Divided by number of affordable housing units in the original layer attribute table to get percentage of affordable housing projects outside walking distance of a metro station</h3>
+<!-- Link to your shapefile in Github and you CSV -->
+<h2>Findings:</h2>
+<h3>77.6% of affordable housing in Washington D.C. is outside walking distance of a metro station</h3>
+<h2>Data used for this project</h2>
+    <a href="https://opendata.dc.gov/datasets/7241f6d500b44288ad983f0942b39663/explore?location=38.893754%2C-77.014470%2C11.90"> Affordable Housing Locations </a>
+    <p></p>
+    <a href="https://rtdc-mwcog.opendata.arcgis.com/datasets/mwcog::metro-rail-stations/explore?location=38.888412%2C-76.997333%2C12.75"> Metro Station Locations </a>
+    <p></p>
+    <a href="https://afdc.energy.gov/vehicle-registration"> Created buffer GeoJSON </a>
+    <p></p>
+    <a href="https://github.com/mneuwirth1/GIS.io/blob/main/HW7/USgeoJSON.geojson"> Created difference GeoJSON </a>
+
+</body>
+</html>
